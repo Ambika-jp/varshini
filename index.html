@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instagram Downloader</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="main">
+    <h1>📥 Instagram Downloader with AI Assistant</h1>
+    <input type="text" id="instaLink" placeholder="Paste Instagram Link..." />
+    <select id="downloadType">
+      <option value="post">Post</option>
+      <option value="video">Video</option>
+      <option value="thumbnail">Thumbnail</option>
+      <option value="story">Story</option>
+    </select>
+    <select id="resolution">
+      <option value="auto">Auto</option>
+      <option value="1080p">1080p</option>
+      <option value="720p">720p</option>
+    </select>
+    <button onclick="startDownload()">Download</button>
+
+    <div id="result" class="result-box"></div>
+  </div>
+</body>
+</html>
